@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spam Email Classifier</title>
+</head>
+<body>
+  <h1>Spam Email Classifier (Enron Model)</h1>
+  <form method="POST">
+    <input type="text" name="subject" placeholder="Email Subject" size="60"><br><br>
+    <textarea name="message" rows="10" cols="60" placeholder="Email Message"></textarea><br>
+    <button type="submit">Classify</button>
+  </form>
+
+  {% if result %}
+    <h2>Prediction: {{ result }}</h2>
+  {% endif %}
+</body>
+</html>
+
